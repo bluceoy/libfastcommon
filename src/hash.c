@@ -1377,7 +1377,7 @@ static unsigned int crc_table[256] = {
 #define CRC32_BODY(init_value) \
 	unsigned char *pKey; \
 	unsigned char *pEnd; \
-	int crc; \
+	unsigned int crc; \
  \
 	crc = init_value; \
 	pEnd = (unsigned char *)key + key_len; \
